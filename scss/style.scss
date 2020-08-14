@@ -1,0 +1,111 @@
+@import 'config';
+
+body {
+  //box model layer
+  background-color: $LightGray;
+  margin: 0;
+  padding: 3em 2em;
+  //display
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //dimension
+  max-width: 1440px;
+  height: 100vh;
+  //textual content
+  font-size: 14px;
+  font-family: $font-stack;
+  color: $LightGray;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+p {
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+.light {
+  opacity: 0.5;
+  font-size: 14px;
+}
+main {
+  width: 100%;
+  box-shadow: 1px 1px lightgray;
+  border-radius: 10px;
+  overflow: hidden;
+  section {
+    padding: 1.6rem;
+  }
+  #introduction {
+    background-color: white;
+    h1 {
+      font-size: 1.5em;
+      color: $Cyan;
+    }
+    h2 {
+      color: $BrighYellow;
+    }
+    p {
+      color: $GrayishBlue;
+    }
+  }
+  #price {
+    background-color: $Cyan;
+    .offer-price {
+      display: flex;
+      align-items: center;
+      padding-top: 0.6em;
+    }
+    .bold {
+      font-size: 2.2em;
+      font-weight: 700;
+      padding-right: 0.3em;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      background-color: $BrighYellow;
+      color: white;
+      padding: 0.5em;
+      text-align: center;
+      border-radius: 0.3em;
+      margin-top: 1.5em;
+      cursor: pointer;
+    }
+  }
+  #benefit {
+    background-color: lighten($Cyan, 2%);
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  }
+}
+
+//tablet
+@media (min-width: 768px) {
+  body {
+    padding: 0;
+  }
+  main {
+    max-width: 70%;
+  }
+  .grid-col-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  p {
+    font-size: 1.1em;
+  }
+}
+
+//laptop/PC
+@media (min-width: 1280px) {
+  main {
+    max-width: 45%;
+  }
+}

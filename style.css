@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+body {
+  background-color: #e5eff5;
+  margin: 0;
+  padding: 3em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1440px;
+  height: 100vh;
+  font-size: 14px;
+  font-family: "Karla", sans-serif;
+  color: #e5eff5;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+.light {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+main {
+  width: 100%;
+  -webkit-box-shadow: 1px 1px lightgray;
+          box-shadow: 1px 1px lightgray;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+main section {
+  padding: 1.6rem;
+}
+
+main #introduction {
+  background-color: white;
+}
+
+main #introduction h1 {
+  font-size: 1.5em;
+  color: #2ab2af;
+}
+
+main #introduction h2 {
+  color: #c0df34;
+}
+
+main #introduction p {
+  color: #98a6bd;
+}
+
+main #price {
+  background-color: #2ab2af;
+}
+
+main #price .offer-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0.6em;
+}
+
+main #price .bold {
+  font-size: 2.2em;
+  font-weight: 700;
+  padding-right: 0.3em;
+}
+
+main #price a {
+  display: block;
+  text-decoration: none;
+  background-color: #c0df34;
+  color: white;
+  padding: 0.5em;
+  text-align: center;
+  border-radius: 0.3em;
+  margin-top: 1.5em;
+  cursor: pointer;
+}
+
+main #benefit {
+  background-color: #2cbab8;
+}
+
+main #benefit ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 0;
+  }
+  main {
+    max-width: 70%;
+  }
+  .grid-col-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  p {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 1280px) {
+  main {
+    max-width: 45%;
+  }
+}
