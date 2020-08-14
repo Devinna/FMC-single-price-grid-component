@@ -1,5 +1,8 @@
 @import 'config';
 
+* {
+  box-sizing: border-box;
+}
 body {
   //box model layer
   background-color: $LightGray;
